@@ -16,6 +16,7 @@ public class Telemetria {
         setStatus(status);
         this.timestamp = LocalDateTime.now();
     }
+    
     public Telemetria(String evento, String status, LocalDateTime timestamp){
         setEvento(evento);
         setStatus(status);

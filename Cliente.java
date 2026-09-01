@@ -1,33 +1,46 @@
-public class Cliente extends Pessoa {
+public class Cliente extends Pessoa{
     private String codigoCTI;
     private String segmento;
     private String nivel;
 
-    public Cliente(String nome, String codigoCTI, String segmento, String nivel) {
+    public Cliente(
+        String nome,
+        String codigoCTI,
+        String segmento,
+        String nivel
+    ){
         super(nome);
+
         this.codigoCTI = codigoCTI;
         this.segmento = segmento;
         this.nivel = nivel;
     }
-
-    public String getCodigoCTI() {
+ 
+    // retorna o codigo do cliente
+    public String getCodigoCTI(){
         return codigoCTI;
+
     }
 
-    public String getSegmento() {
+
+    public String getSegmento(){
         return segmento;
     }
 
-    public String getNivel() {
+    public String getNivel(){
         return nivel;
     }
+ 
 
+    // Polimorfismo
     @Override
-    public void exibirInformacoes() {
+
+    public void exibirInformacoes(){
         System.out.println("=== CLIENTE ===");
         System.out.println("Nome: " + getNome());
-        System.out.println("Código CTI: " + getCodigoCTI());
-        System.out.println("Segmento: " + getSegmento());
-        System.out.println("Nível: " + getNivel());
+        System.out.println("Código CTI: " + codigoCTI);
+        System.out.println("Nivel: " + nivel);
     }
+
+    
 }

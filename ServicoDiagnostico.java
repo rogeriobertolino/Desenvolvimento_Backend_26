@@ -7,7 +7,7 @@ public class ServicoDiagnostico extends Servico{
 
     @Override
     public void executar(){
-        System.out.println("Executando diagnóstico do cliente");
+        System.out.println("Executando diagnóstico do cliente " + getNome());
     }
     
 }
